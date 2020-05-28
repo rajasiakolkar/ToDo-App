@@ -1,0 +1,13 @@
+<h1>Welcome, {{name}}!</h1>
+<div class="container">
+    <a routerLink="/list"> MANAGE TO-DO </a>
+</div>
+
+<div>
+    <button (click)=getWelcomeMessageWithPathVariable() class="btn btn-success">Click Me</button>
+</div>
+
+<div>
+    <h2 *ngIf="messageFromService"> Message from Service </h2>
+    {{messageFromService}}
+</div>
